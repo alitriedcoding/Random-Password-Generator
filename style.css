@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#container {
+  background-color: #c39393;
+  box-shadow: 5px 10px 20px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#inputcontainer {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#input {
+  padding: 5px;
+  background-color: #c39393;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+input::placeholder {
+  letter-spacing: normal;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.3;
+}
+img:hover {
+  opacity: 0.7;
+}
+#btn {
+  background-color: #a86262;
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 20%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.copypassword {
+  width: 300px;
+  position: fixed;
+  background-color: lightgreen;
+  box-shadow: 5px 10px 20px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.active.copypassword {
+  right: -500px;
+}
